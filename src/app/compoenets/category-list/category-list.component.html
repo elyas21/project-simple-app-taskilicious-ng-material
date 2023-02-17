@@ -1,0 +1,9 @@
+<div>
+    <h1>Welcome to Taskilicious</h1>
+    <div>
+        <h4>Choose a Category</h4>
+        <div *ngFor="let category of (categoryList$ | async)" >
+           <app-list-card [CategoryObject]="category"></app-list-card>
+        </div>
+    </div>
+</div>
