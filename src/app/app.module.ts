@@ -21,6 +21,7 @@ import { CategoryCreateComponent } from './compoenets/category-create/category-c
 import { CategoryEditComponent } from './compoenets/category-edit/category-edit.component';
 import { CategoryDetailComponent } from './compoenets/category-detail/category-detail.component';
 import { TaskCreateComponent } from './compoenets/task-create/task-create.component';
+import { TaskEditComponent } from './compoenets/task-edit/task-edit.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TaskCreateComponent } from './compoenets/task-create/task-create.compon
     CategoryCreateComponent,
     CategoryEditComponent,
     CategoryDetailComponent,
-    TaskCreateComponent
+    TaskCreateComponent,
+    TaskEditComponent
   ],
   imports: [
     BrowserModule,

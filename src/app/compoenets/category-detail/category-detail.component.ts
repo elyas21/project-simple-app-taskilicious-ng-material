@@ -14,7 +14,7 @@ export class CategoryDetailComponent implements OnInit, OnDestroy {
   dataSource: Category[] = [];
   category: Category | undefined;
   detailSubscripition: Subscription | undefined;
-  displayedColumns: string[] = ['name', 'categoryId', 'Remove']
+  displayedColumns: string[] = ['Name', 'CategoryId','Edit', 'Remove']
   categoryId: string | undefined;
 
   constructor(
@@ -43,7 +43,6 @@ export class CategoryDetailComponent implements OnInit, OnDestroy {
   deleteTask(task: any) {
     this._task.removeTask(task.id).subscribe(res => {
       this.getTask()
-
     })
   }
   ngOnDestroy(): void {
