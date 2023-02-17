@@ -1,0 +1,25 @@
+<div>
+  <h1>Welcome to Taskilicious</h1>
+  <div>
+    <h4>Choose a Category</h4>
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-select  [formControl]="selected">
+          <mat-option *ngFor="let item of options" [value]="item">
+            {{item}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div *ngFor="let category of (categoryList$ )">
+      <app-list-card [CategoryObject]="category"></app-list-card>
+    </div>
+    <div>
+      <button mat-mini-fab color="accent" [routerLink]="['categories','create']"
+        aria-label="Add Categories">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+

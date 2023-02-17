@@ -1,0 +1,8 @@
+<mat-list>
+    <mat-list-item class="mat-list-card">
+        <p [routerLink]="['categories', CategoryObject?.id]">
+            {{CategoryObject?.name}}
+        </p>
+        <mat-icon aria-hidden="false" aria-label="Edit" [routerLink]="['categories','edit',CategoryObject?.id]" fontIcon="edit"></mat-icon>
+    </mat-list-item>
+</mat-list>

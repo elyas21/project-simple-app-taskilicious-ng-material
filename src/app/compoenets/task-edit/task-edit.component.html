@@ -1,0 +1,29 @@
+<h4>Edit  Task</h4>
+
+<div>
+    <form [formGroup]="taskFormGroup" (ngSubmit)="onSubmit()">
+        <mat-form-field class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-select formControlName="categoryId">
+                <mat-option *ngFor="let item of catagoriesList" [value]="item.id">
+                    {{item.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Update</button>
+    </form>
+</div>
+<div class="chkbx" >
+    <div *ngFor="let item of teamList">
+
+        <img  [src]="item.avatar" [alt]="item.name">
+        
+        <mat-checkbox class="example-margin" (click)="addTeamMemeber(item.id)" >{{ item.name }}</mat-checkbox>
+    </div>
+</div>
+
+ 
