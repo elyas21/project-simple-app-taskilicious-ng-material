@@ -9,26 +9,15 @@ form {
 }
 
 .chkbx {
-    // display: grid;
-    // grid-template-columns: 1fr 1fr ;
-    // grid-template-rows: repeat(6, minmax(20,50));
-    // display: grid;
-    // grid-template-columns: repeat( auto, minmax(250px, 500px) );
-    // // grid-template-rows: repeat(12,40px);
-    // img{
-    //     height: 30px;
-    //     height: 40px;
-    // }
-    div{
+
+    div {
         display: inline;
         width: 300px;
-        img{
+
+        img {
             width: 25px;
             height: 25px;
         }
     }
-    // grid-auto-columns: repeat(13, minmax(200px, 400px));
 
-    // gap: 10;
-    // grid-auto-rows: minmax(100px, auto);
 }
