@@ -8,6 +8,11 @@ import { Category } from '../models/Category';
   providedIn: 'root'
 })
 export class CategorieService {
+  getAllTasks(id: string):Observable<Task[]> {
+   return this.http.get<Task[]>(environment.api_base_url + 'tasks')
+   .pipe(catchError((x) => { throw 'Get By ID Error occurred' }))
+
+  }
 
   constructor(private http: HttpClient) { }
   /*
