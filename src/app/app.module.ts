@@ -20,6 +20,7 @@ import { ListCardComponent } from './compoenets/category-list/list-card/list-car
 import { CategoryCreateComponent } from './compoenets/category-create/category-create.component';
 import { CategoryEditComponent } from './compoenets/category-edit/category-edit.component';
 import { CategoryDetailComponent } from './compoenets/category-detail/category-detail.component';
+import { TaskCreateComponent } from './compoenets/task-create/task-create.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CategoryDetailComponent } from './compoenets/category-detail/category-d
     CategoryListComponent,
     CategoryCreateComponent,
     CategoryEditComponent,
-    CategoryDetailComponent
+    CategoryDetailComponent,
+    TaskCreateComponent
   ],
   imports: [
     BrowserModule,

@@ -4,12 +4,14 @@ import { CategoryCreateComponent } from './compoenets/category-create/category-c
 import { CategoryDetailComponent } from './compoenets/category-detail/category-detail.component';
 import { CategoryEditComponent } from './compoenets/category-edit/category-edit.component';
 import { CategoryListComponent } from './compoenets/category-list/category-list.component';
+import { TaskCreateComponent } from './compoenets/task-create/task-create.component';
 
 const route: Routes = [
   { path: '', component: CategoryListComponent },
   { path: 'categories/create', component: CategoryCreateComponent },
   { path: 'categories/edit/:id', component: CategoryEditComponent },
   { path: 'categories/:id', component: CategoryDetailComponent },
+  { path: 'task/create', component: TaskCreateComponent },
 ]
 
 @NgModule({

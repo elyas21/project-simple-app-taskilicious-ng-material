@@ -14,7 +14,7 @@
     <div *ngFor="let category of (categoryList$ )">
       <app-list-card [CategoryObject]="category"></app-list-card>
     </div>
-    <div class="example-button-container">
+    <div>
       <button mat-mini-fab color="accent" [routerLink]="['categories','create']"
         aria-label="Add Categories">
         <mat-icon>add</mat-icon>
