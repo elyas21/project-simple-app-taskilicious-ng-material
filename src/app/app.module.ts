@@ -17,6 +17,7 @@ import { CategoryListComponent } from './compoenets/category-list/category-list.
 import { ListCardComponent } from './compoenets/category-list/list-card/list-card.component';
 import { CategoryCreateComponent } from './compoenets/category-create/category-create.component';
 import { CategoryEditComponent } from './compoenets/category-edit/category-edit.component';
+import { CategoryDetailComponent } from './compoenets/category-detail/category-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CategoryEditComponent } from './compoenets/category-edit/category-edit.
     ListCardComponent,
     CategoryListComponent,
     CategoryCreateComponent,
-    CategoryEditComponent
+    CategoryEditComponent,
+    CategoryDetailComponent
   ],
   imports: [
     BrowserModule,
