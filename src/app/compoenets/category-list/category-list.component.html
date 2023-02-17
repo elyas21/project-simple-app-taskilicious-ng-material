@@ -1,14 +1,15 @@
 <div>
-    <h1>Welcome to Taskilicious</h1>
-    <div>
-        <h4>Choose a Category</h4>
-        <div *ngFor="let category of (categoryList$ | async)" >
-           <app-list-card [CategoryObject]="category"></app-list-card>
-        </div>
-        <div class="example-button-container">
-            <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
-              <mat-icon>add</mat-icon>
-            </button>
-          </div>    
+  <h1>Welcome to Taskilicious</h1>
+  <div>
+    <h4>Choose a Category</h4>
+    <div *ngFor="let category of (categoryList$ | async)">
+      <app-list-card [CategoryObject]="category"></app-list-card>
     </div>
+    <div class="example-button-container">
+      <button mat-mini-fab color="accent" [routerLink]="['categories','create']"
+        aria-label="Example icon button with a plus one icon">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+  </div>
 </div>
