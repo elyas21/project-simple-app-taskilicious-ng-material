@@ -17,3 +17,13 @@
         <button mat-raised-button color="primary" type="submit">Create</button>
     </form>
 </div>
+
+
+<div class="chkbx" >
+    <div *ngFor="let item of teamList">
+
+        <img  [src]="item.avatar" [alt]="item.name">
+        
+        <mat-checkbox class="example-margin" (click)="addTeamMemeber(item.id)" >{{ item.name }}</mat-checkbox>
+    </div>
+</div>

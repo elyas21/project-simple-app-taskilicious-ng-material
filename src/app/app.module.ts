@@ -22,6 +22,7 @@ import { CategoryEditComponent } from './compoenets/category-edit/category-edit.
 import { CategoryDetailComponent } from './compoenets/category-detail/category-detail.component';
 import { TaskCreateComponent } from './compoenets/task-create/task-create.component';
 import { TaskEditComponent } from './compoenets/task-edit/task-edit.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { TaskEditComponent } from './compoenets/task-edit/task-edit.component';
     MatInputModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatTableModule
+    MatTableModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
