@@ -16,13 +16,15 @@ import { AppComponent } from './app.component';
 import { CategoryListComponent } from './compoenets/category-list/category-list.component';
 import { ListCardComponent } from './compoenets/category-list/list-card/list-card.component';
 import { CategoryCreateComponent } from './compoenets/category-create/category-create.component';
+import { CategoryEditComponent } from './compoenets/category-edit/category-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListCardComponent,
     CategoryListComponent,
-    CategoryCreateComponent
+    CategoryCreateComponent,
+    CategoryEditComponent
   ],
   imports: [
     BrowserModule,
