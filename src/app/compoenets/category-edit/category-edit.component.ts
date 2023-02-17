@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription, switchMap } from 'rxjs';
 import { Category } from 'src/app/models/Category';
 import { CategorieService } from 'src/app/services/category.service';
@@ -15,7 +15,7 @@ export class CategoryEditComponent implements OnInit, OnDestroy {
   category: Category | undefined;
   editCategory = new FormControl('',  [Validators.required])
   updateSubscripition: Subscription | undefined;
-  constructor(private _activated: ActivatedRoute, private _service: CategorieService) { }
+  constructor(private _activated: ActivatedRoute,private _router: Router, private _service: CategorieService) { }
 
   /**
    * On this on intit method 
@@ -35,7 +35,7 @@ export class CategoryEditComponent implements OnInit, OnDestroy {
   updateCategory(){
     if(!!this.editCategory.value)
     this.updateSubscripition= this._service.putCatagory({name:this.editCategory.value, id: this.category?.id}).subscribe(res=>{
-      console.log('Successfully updated');
+      this._router.navigate(['/'])
     })
   }
   ngOnDestroy() {
